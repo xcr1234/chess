@@ -206,6 +206,18 @@ public class GameWindow extends JFrame {
             }
         });
         menu.add(item3);
+        menu.addSeparator();
+
+        panel.setLayout(new BorderLayout());
+        panel.addMouseMotionListener(new MouseDragListener(panel, this));
+        panel.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseReleased(MouseEvent e) {
+                if (e.getButton() == MouseEvent.BUTTON3){
+                    menu.show(e.getComponent(),e.getX(),e.getY());
+                }
+            }
+        });
         startGame();
         getContentPane().add(panel, BorderLayout.CENTER);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
