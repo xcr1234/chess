@@ -31,6 +31,14 @@ public class MP3Player {
         }
     }
 
+    public void playSync(){
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                play();
+            }
+        }).start();
+    }
 
 
     public void play() {

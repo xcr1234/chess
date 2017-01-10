@@ -196,13 +196,7 @@ public class GameWindow extends JFrame {
                     try(FileInputStream fileInputStream = new FileInputStream(file)){
                         ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
                         ChessSave chessSave = (ChessSave) objectInputStream.readObject();
-                        GameWindow.this.human = chessSave.getHumanPlayer();
-                        GameWindow.this.aiPlayer = chessSave.getBaseComputerAi();
-                        GameWindow.this.chessBoard = chessSave.getChessBoard();
-                        GameWindow.this.image = chessSave.getImage();
-                        GameWindow.this.black = chessSave.isBlack();
-                        GameWindow.this.isWin = chessSave.isIswin();
-                        panel.repaint();
+                        loadChessSave(chessSave);
                         MyOptionPane.showMessageDialog(GameWindow.this,"加载棋谱成功！","提示");
                     } catch (Exception ex) {
                         ex.printStackTrace();
@@ -212,17 +206,6 @@ public class GameWindow extends JFrame {
             }
         });
         menu.add(item3);
-
-        panel.setLayout(new BorderLayout());
-        panel.addMouseMotionListener(new MouseDragListener(panel, this));
-        panel.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseReleased(MouseEvent e) {
-                if (e.getButton() == MouseEvent.BUTTON3){
-                    menu.show(e.getComponent(),e.getX(),e.getY());
-                }
-            }
-        });
         startGame();
         getContentPane().add(panel, BorderLayout.CENTER);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -237,6 +220,24 @@ public class GameWindow extends JFrame {
     private void clear(){
         image = (BufferedImage) ResourceUtil.getImage("chess.jpg");
         startGame();
+    }
+
+    public void loadChessSave(ChessSave chessSave){
+        this.human = chessSave.getHumanPlayer();
+        this.aiPlayer = chessSave.getBaseComputerAi();
+        this.chessBoard = chessSave.getChessBoard();
+        this.black = chessSave.isBlack();
+        this.isWin = chessSave.isIswin();
+        image = (BufferedImage) ResourceUtil.getImage("chess.jpg");
+        for(Point point:human.getMyPoints()){
+            chessBoard.getFreePoints().remove(point);
+            drawImage(image,point.getX(),point.getY(),black);
+        }
+        for(Point point:aiPlayer.getMyPoints()){
+            chessBoard.getFreePoints().remove(point);
+            drawImage(image,point.getX(),point.getY(),!black);
+        }
+        panel.repaint();
     }
 
 
@@ -285,7 +286,9 @@ public class GameWindow extends JFrame {
             }).start(); //异步播放落子音效，否则会阻塞主线程的执行
             human.run(aiPlayer.getMyPoints(),point);
             drawPoint(x,y,black);
-            checkWin(true);
+            if(checkWin(true)){
+                return;
+            }
             aiPlayer.run(human.getMyPoints(),null);
             Point aiPoint = aiPlayer.getMyPoints().get(aiPlayer.getMyPoints().size()-1);
             drawPoint(aiPoint.getX(),aiPoint.getY(),!black);
@@ -305,7 +308,7 @@ public class GameWindow extends JFrame {
         panel.repaint();
     }
 
-    public static void drawImage(BufferedImage image,int x,int y,boolean black){
+    private void drawImage(BufferedImage image,int x,int y,boolean black){
         int px = x0+dis*x-20;
         int py = y0+dis*y-20;
         Graphics2D g = image.createGraphics();
@@ -316,22 +319,43 @@ public class GameWindow extends JFrame {
         }
     }
 
+    private final MP3Player WIN = new MP3Player(ResourceUtil.getStream("win.mp3"));
+    private final MP3Player DEFEAT = new MP3Player(ResourceUtil.getStream("defeat.mp3"));
 
 
-    private void checkWin(boolean player){
+    private boolean checkWin(boolean player){
         if(player && human.hasWin()){
             isWin = true;
+            WIN.playSync();
             if(MyOptionPane.showConfirmDialog(this,"比赛结束—获胜","你赢了！是否继续？","是","否")==JOptionPane.OK_OPTION){
                 clear();
             }
+            return true;
         }
 
         if(!player && aiPlayer.hasWin()){
             isWin = true;
+            DEFEAT.playSync();
+            try {
+                Thread.sleep(200);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             if(MyOptionPane.showConfirmDialog(this,"比赛结束—战败","你输了！是否继续？","是","否")==JOptionPane.OK_OPTION){
                 clear();
             }
+            return true;
         }
+
+        if(chessBoard.getFreePoints().isEmpty()){
+            isWin = true;
+            if(MyOptionPane.showConfirmDialog(this,"比赛结束","和棋！是否继续？","是","否")==JOptionPane.OK_OPTION){
+                clear();
+            }
+            return true;
+        }
+
+        return false;
     }
 
 

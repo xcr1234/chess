@@ -24,7 +24,6 @@ public class ChessSave implements Externalizable{
     private boolean black;
     private boolean iswin;
     private ChessBoard chessBoard;
-    private BufferedImage image;
 
     public ChessSave() {
     }
@@ -68,13 +67,6 @@ public class ChessSave implements Externalizable{
         this.chessBoard = chessBoard;
     }
 
-    public BufferedImage getImage() {
-        return image;
-    }
-
-    public void setImage(BufferedImage image) {
-        this.image = image;
-    }
 
     public boolean isBlack() {
         return black;
@@ -100,15 +92,6 @@ public class ChessSave implements Externalizable{
         List<Point> ai = (List<Point>) in.readObject();
         iswin = in.readBoolean();
         chessBoard = new ChessBoard();
-        image = (BufferedImage) ResourceUtil.getImage("chess.jpg");
-        for(Point point:human){
-            chessBoard.getFreePoints().remove(point);
-            GameWindow.drawImage(image,point.getX(),point.getY(),black);
-        }
-        for(Point point:ai){
-            chessBoard.getFreePoints().remove(point);
-            GameWindow.drawImage(image,point.getX(),point.getY(),!black);
-        }
         this.humanPlayer = new HumanPlayer();
         humanPlayer.setChessboard(chessBoard);
         humanPlayer.getMyPoints().addAll(human);
