@@ -10,6 +10,8 @@ public class ChessBoard implements IChessboard{
 
     private List<Point> pointList;
 
+
+
     public ChessBoard(){
         pointList = new LinkedList<>();
         for(int i=0;i<15;i++){

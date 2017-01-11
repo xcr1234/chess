@@ -29,7 +29,7 @@ public class MP3Player {
         }catch (Exception e){
             e.printStackTrace();
         }
-    }
+}
 
     public void playSync(){
         new Thread(new Runnable() {
