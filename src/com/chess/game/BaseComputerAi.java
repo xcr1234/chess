@@ -117,9 +117,39 @@ public class BaseComputerAi extends BasePlayer {
     }
 
 
+    //BUG修复：当电脑是黑棋的时候，白棋下在黑棋右边一颗（即开局黑(7,7)白(7,8)）会出现bug.
     //下第一步棋子，不需要复杂的计算，根据人类第一步棋子X值减1完成
     private Point getFirstPoint(List<Point> humans) {
         Point point = humans.get(0);
+        if(myPoints.isEmpty()){
+            //人类已经下了一颗，我还没有下，所以人类是先手
+            return xm1(point);
+        }else{
+            //我是先手，根据人类下的那一颗判断
+            if(point.x==6&&point.y==6){
+                return new Point(6,8);
+            }else if(point.x==6&&point.y==7){
+                return new Point(6,6);
+            }else if(point.x==6&&point.y==8){
+                return new Point(6,6);
+            }else if(point.x==7&&point.y==6){
+                return new Point(8,8);
+            }else if(point.x==7&&point.y==8){
+                return new Point(6,8);
+            }else if(point.x==8&&point.y==6){
+                return new Point(6,6);
+            }else if(point.x==8&&point.y == 7){
+                return new Point(6,6);
+            }else if(point.x==8&&point.y == 8){
+                return new Point(6,8);
+            }else{
+                return xm1(point);
+            }
+        }
+
+    }
+
+    private Point xm1(Point point){
         if(point.getX()==0 || point.getY()==0 || point.getX()==maxX && point.getY()==maxY)
             return new Point(maxX/2, maxY/2);
         else{

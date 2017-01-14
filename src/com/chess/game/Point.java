@@ -55,4 +55,8 @@ public class Point implements Serializable{
         return result;
     }
 
+    @Override
+    public String toString() {
+        return "Point("+x+","+y+")";
+    }
 }

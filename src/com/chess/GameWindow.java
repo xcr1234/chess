@@ -88,10 +88,12 @@ public class GameWindow extends JFrame {
 
         JButton btn_back = new MyButton();
         btn_back.setBounds(450, 3, 22, 22);
-        btn_back.addActionListener(new ActionListener() {
+        btn_back.addMouseListener(new MouseAdapter() {
             @Override
-            public void actionPerformed(ActionEvent e) {
-                backPoint();
+            public void mouseClicked(MouseEvent e) {
+                if(e.getButton()==MouseEvent.BUTTON1){
+                    menu.show(e.getComponent(),e.getX(),e.getY());
+                }
             }
         });
         panel.add(btn_back);
