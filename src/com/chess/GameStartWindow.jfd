@@ -1,0 +1,126 @@
+JFDML JFormDesigner: "5.2.5.1.342" Java: "1.8.0_112" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			"title": "五子棋游戏"
+			"defaultCloseOperation": 2
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.intellij.uiDesigner.core.GridLayoutManager ) {
+				"$columnCount": 3
+				"$rowCount": 5
+			} ) {
+				name: "panel"
+				add( new FormComponent( "javax.swing.JRadioButton" ) {
+					name: "radioLow"
+					"text": "低"
+					"$buttonGroup": new FormReference( "buttonGroup1" )
+				}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+					"column": 1
+					"colSpan": 2
+					"anchor": 8
+					"vSizePolicy": 0
+				} )
+				add( new FormComponent( "javax.swing.JRadioButton" ) {
+					name: "radioHigh"
+					"text": "高"
+					"$buttonGroup": new FormReference( "buttonGroup1" )
+				}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+					"column": 1
+					"row": 2
+					"colSpan": 2
+					"anchor": 8
+					"vSizePolicy": 0
+				} )
+				add( new FormComponent( "javax.swing.JRadioButton" ) {
+					name: "radioMid"
+					"selected": true
+					"text": "中"
+					"$buttonGroup": new FormReference( "buttonGroup1" )
+				}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+					"column": 1
+					"row": 1
+					"colSpan": 2
+					"anchor": 8
+					"vSizePolicy": 0
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "先手"
+					auxiliary() {
+						"JavaCodeGenerator.variableLocal": true
+					}
+				}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+					"row": 3
+					"anchor": 8
+					"hSizePolicy": 0
+					"vSizePolicy": 0
+				} )
+				add( new FormComponent( "javax.swing.JRadioButton" ) {
+					name: "radioBlack"
+					"selected": true
+					"text": "黑棋"
+					"$buttonGroup": new FormReference( "buttonGroup2" )
+				}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+					"column": 1
+					"row": 3
+					"anchor": 8
+					"vSizePolicy": 0
+				} )
+				add( new FormComponent( "javax.swing.JRadioButton" ) {
+					name: "radioWhite"
+					"text": "白棋"
+					"$buttonGroup": new FormReference( "buttonGroup2" )
+				}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+					"column": 2
+					"row": 3
+					"anchor": 8
+					"vSizePolicy": 0
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnOk"
+					"text": "开始"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn_gameStart", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnOkActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn_gameStart", true ) )
+				}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+					"column": 1
+					"row": 4
+					"fill": 1
+					"vSizePolicy": 0
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnClose"
+					"text": "关闭"
+				}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+					"column": 2
+					"row": 4
+					"fill": 1
+					"vSizePolicy": 0
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "难度"
+					auxiliary() {
+						"JavaCodeGenerator.variableLocal": true
+					}
+				}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+					"anchor": 8
+					"hSizePolicy": 0
+					"vSizePolicy": 0
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 203
+				"height": 213
+				"x": 10
+				"y": 0
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 220, 220 )
+		} )
+	}
+}

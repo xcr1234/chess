@@ -7,8 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ccb221bb-e5f4-41bc-bbd4-f4a6f50a2ca2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/intellij_uiDesigner.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/chess/GameStartWindow.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/chess/GameStartWindow.jfd" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/chess/StartForm.form" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/chess/StartForm.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/chess.jar" afterPath="$PROJECT_DIR$/bin/chess.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/chess/game/BaseComputerAi.java" afterPath="$PROJECT_DIR$/src/com/chess/game/BaseComputerAi.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/chess/Game.java" afterPath="$PROJECT_DIR$/src/com/chess/Game.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/chess/GameWindow.java" afterPath="$PROJECT_DIR$/src/com/chess/GameWindow.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,22 +33,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BaseComputerAi.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/chess/game/BaseComputerAi.java">
+      <file leaf-file-name="GameStartWindow.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/chess/GameStartWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="128" column="12" lean-forward="false" selection-start-line="128" selection-start-column="12" selection-end-line="128" selection-end-column="12" />
+            <state relative-caret-position="129">
+              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding>
-                <element signature="e#20692#20693#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <marker date="1484463596751" expanded="false" signature="1015:6164" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+                <marker date="1484463596751" expanded="false" signature="6176:6591" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
               </folding>
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="chess.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resource/chess.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
@@ -67,13 +68,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/chess/util/ResouceUtil.java" />
-        <option value="$PROJECT_DIR$/src/com/chess/GamePanel.java" />
-        <option value="$PROJECT_DIR$/src/com/chess/BackgroundPanel.java" />
-        <option value="$PROJECT_DIR$/src/com/chess/MouseDragListener.java" />
-        <option value="$PROJECT_DIR$/src/com/chess/ui/BackgroundPanel.java" />
-        <option value="$PROJECT_DIR$/src/com/chess/ui/MyOptionPane.java" />
-        <option value="$PROJECT_DIR$/src/com/chess/ui/Constants.java" />
         <option value="$PROJECT_DIR$/src/com/chess/ui/CloseActionListener.java" />
         <option value="$PROJECT_DIR$/server/src/com/chess/Server.java" />
         <option value="$PROJECT_DIR$/src/com/chess/ClientListener.java" />
@@ -96,8 +90,6 @@
         <option value="$PROJECT_DIR$/src/com/chess/game/BasicChessBoard.java" />
         <option value="$PROJECT_DIR$/src/com/chess/game/IPlayer.java" />
         <option value="$PROJECT_DIR$/src/com/chess/game/HumanPlayer.java" />
-        <option value="$PROJECT_DIR$/src/com/chess/StartForm.java" />
-        <option value="$PROJECT_DIR$/src/com/chess/Game.java" />
         <option value="$PROJECT_DIR$/src/com/chess/game/ChessSerialize.java" />
         <option value="$PROJECT_DIR$/src/com/chess/util/WavPlayer.java" />
         <option value="$PROJECT_DIR$/src/com/qq/util/Audio.java" />
@@ -108,16 +100,25 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/src/com/chess/part/package-info.java" />
-        <option value="$PROJECT_DIR$/src/com/chess/util/ChessSave.java" />
         <option value="$PROJECT_DIR$/src/com/chess/part/Part1.java" />
         <option value="$PROJECT_DIR$/src/com/chess/part/Part2.java" />
         <option value="$PROJECT_DIR$/src/com/chess/part/PartChess.java" />
         <option value="$PROJECT_DIR$/src/com/chess/game/ChessBoard.java" />
         <option value="$PROJECT_DIR$/src/com/chess/game/ChessBoardList.java" />
         <option value="$PROJECT_DIR$/src/com/chess/util/MP3Player.java" />
-        <option value="$PROJECT_DIR$/src/com/chess/GameWindow.java" />
         <option value="$PROJECT_DIR$/src/com/chess/game/Point.java" />
         <option value="$PROJECT_DIR$/src/com/chess/game/BaseComputerAi.java" />
+        <option value="$PROJECT_DIR$/src/com/chess/util/ChessSave.java" />
+        <option value="$PROJECT_DIR$/src/com/chess/util/ImageSerializer.java" />
+        <option value="$PROJECT_DIR$/src/com/chess/GameWindow.java" />
+        <option value="$PROJECT_DIR$/src/com/chess/StartWindow.java" />
+        <option value="$PROJECT_DIR$/src/com/chess/StartForm.jfd" />
+        <option value="$PROJECT_DIR$/src/com/chess/StartForm.java" />
+        <option value="$PROJECT_DIR$/src/com/chess/GameStartForm.jfd" />
+        <option value="$PROJECT_DIR$/src/com/chess/GameStartForm.java" />
+        <option value="$PROJECT_DIR$/src/com/chess/Game.java" />
+        <option value="$PROJECT_DIR$/src/com/chess/GameStartWindow.jfd" />
+        <option value="$PROJECT_DIR$/src/com/chess/GameStartWindow.java" />
       </list>
     </option>
   </component>
@@ -161,6 +162,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -189,6 +191,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -257,44 +260,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chess" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chess" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chess" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resource" />
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -302,17 +277,18 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://Y:/JAVA/chess/resource/white.gif" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.chess" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="Y:\JAVA\chess\lib" />
       <recent name="Y:\JAVA\chess\resource" />
       <recent name="Y:\JAVA\chess" />
       <recent name="Y:\JAVA\chess\src\com\chess\util" />
-      <recent name="Y:\JAVA\chess\lib" />
       <recent name="Y:\JAVA\chess\src\com\chess\ui" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.chess" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Game">
@@ -1019,18 +995,21 @@
       <workItem from="1484048993913" duration="2547000" />
       <workItem from="1484104976900" duration="1172000" />
       <workItem from="1484110733317" duration="1979000" />
-      <workItem from="1484382028242" duration="2374000" />
+      <workItem from="1484382028242" duration="2540000" />
+      <workItem from="1484408639468" duration="2730000" />
+      <workItem from="1484462368868" duration="1369000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33039000" />
+    <option name="totallyTimeSpent" value="37304000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="JFormDesigner Error Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1050,10 +1029,11 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.352459" sideWeight="0.49121523" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.352459" sideWeight="0.49121523" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2632375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2708018" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="JFormDesigner Bindings" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26557377" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1061,7 +1041,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.49707174" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.49707174" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1072,7 +1052,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1081,48 +1061,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/chess/ui/MouseDragListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-45">
-          <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Java/jdk1.8.0_73/src.zip!/java/awt/Image.java" />
-    <entry file="jar://D:/Java/jdk1.8.0_73/src.zip!/java/awt/image/WritableRenderedImage.java" />
-    <entry file="jar://D:/Java/jdk1.8.0_73/src.zip!/java/awt/image/RenderedImage.java" />
-    <entry file="jar://D:/Java/jdk1.8.0_73/src.zip!/java/awt/Transparency.java" />
-    <entry file="jar://D:/Java/jdk1.8.0_73/src.zip!/java/awt/image/BufferedImage.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/chess/util/WavPlayer.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/qq/util/Audio.java" />
-    <entry file="jar://D:/Java/jdk1.8.0_73/src.zip!/java/awt/Component.java" />
-    <entry file="jar://D:/Java/jdk1.8.0_73/src.zip!/java/lang/Class.java" />
-    <entry file="jar://$PROJECT_DIR$/lib/jl1.0.1.jar!/javazoom/jl/player/advanced/AdvancedPlayer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-741">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource/black.jpg" />
-    <entry file="file://$PROJECT_DIR$/resource/white.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource/black.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chess/StartForm.form" />
-    <entry file="jar://$PROJECT_DIR$/lib/jl1.0.1.jar!/javazoom/jl/player/Player.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="55" column="9" lean-forward="true" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chess/util/ClosedInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -1183,36 +1121,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chess/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chess/part/package-info.java" />
     <entry file="file://$PROJECT_DIR$/src/com/chess/part/Part1.java" />
     <entry file="file://$PROJECT_DIR$/src/com/chess/part/Part2.java" />
     <entry file="file://$PROJECT_DIR$/src/com/chess/part/PartChess.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/chess/util/ChessSave.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/jdk1.8.0_05/jre/lib/rt.jar!/sun/print/ProxyGraphics2D.class" />
     <entry file="jar://C:/jdk1.8.0_05/src.zip!/java/awt/Graphics.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/chess/StartForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chess/game/IChessboard.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -1223,20 +1137,7 @@
     <entry file="jar://C:/jdk1.8.0_05/src.zip!/java/util/AbstractCollection.java" />
     <entry file="jar://C:/jdk1.8.0_05/src.zip!/java/util/AbstractList.java" />
     <entry file="file://$PROJECT_DIR$/src/com/chess/game/ChessBoardList.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/chess/game/ChessSerialize.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chess/util/ByteArrayOutputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="298" column="8" lean-forward="true" selection-start-line="298" selection-start-column="8" selection-end-line="298" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chess/game/ChessSerialize.java" />
     <entry file="jar://C:/jdk1.8.0_05/src.zip!/java/io/ByteArrayInputStream.java" />
     <entry file="file://$PROJECT_DIR$/src/com/chess/util/MP3Player.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1250,7 +1151,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1266,7 +1166,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1275,33 +1174,165 @@
         <state relative-caret-position="91">
           <caret line="39" column="5" lean-forward="false" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
           <folding>
-            <element signature="e#1030#1031#0" expanded="true" />
-            <element signature="e#1073#1074#0" expanded="true" />
+            <element signature="e#1030#1031#0" expanded="false" />
+            <element signature="e#1073#1074#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chess/GameWindow.java">
+    <entry file="jar://D:/Java/jdk1.8.0_73/src.zip!/java/io/DataOutput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="82" column="0" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        <state relative-caret-position="383">
+          <caret line="123" column="18" lean-forward="false" selection-start-line="123" selection-start-column="18" selection-end-line="123" selection-end-column="18" />
         </state>
       </provider>
     </entry>
+    <entry file="jar://D:/Java/jdk1.8.0_73/src.zip!/javax/imageio/ImageIO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6">
+          <caret line="402" column="0" lean-forward="true" selection-start-line="402" selection-start-column="0" selection-end-line="402" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Java/jdk1.8.0_73/src.zip!/java/io/Externalizable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="65" column="55" lean-forward="false" selection-start-line="65" selection-start-column="48" selection-end-line="65" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Java/jdk1.8.0_73/src.zip!/java/awt/image/BufferedImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="67" column="13" lean-forward="false" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Java/jdk1.8.0_73/jre/lib/rt.jar!/sun/awt/image/OffScreenImage.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="23" column="44" lean-forward="false" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Java/jdk1.8.0_73/src.zip!/java/awt/image/WritableRenderedImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="68" column="54" lean-forward="false" selection-start-line="68" selection-start-column="54" selection-end-line="68" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Java/jdk1.8.0_73/src.zip!/java/awt/image/RenderedImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="43" column="35" lean-forward="true" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chess/util/ByteArrayOutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="298" column="8" lean-forward="true" selection-start-line="298" selection-start-column="8" selection-end-line="298" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Java/jdk1.8.0_73/src.zip!/java/awt/image/ImageObserver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-213">
+          <caret line="88" column="56" lean-forward="true" selection-start-line="88" selection-start-column="56" selection-end-line="88" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Java/jdk1.8.0_73/src.zip!/java/awt/Graphics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-410">
+          <caret line="922" column="51" lean-forward="false" selection-start-line="922" selection-start-column="38" selection-end-line="922" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chess/game/BaseComputerAi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="125" column="31" lean-forward="false" selection-start-line="125" selection-start-column="18" selection-end-line="125" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chess/util/ImageSerializer.java" />
     <entry file="file://$PROJECT_DIR$/resource/chess.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chess/game/BaseComputerAi.java">
+    <entry file="file://$PROJECT_DIR$/resource/white.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chess/StartWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="128" column="12" lean-forward="false" selection-start-line="128" selection-start-column="12" selection-end-line="128" selection-end-column="12" />
+        <state relative-caret-position="228">
+          <caret line="12" column="3" lean-forward="false" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chess/StartForm.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chess/StartForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chess/StartForm.jfd">
+      <provider selected="true" editor-type-id="JFormDesigner">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chess/GameStartWindow.jfd">
+      <provider selected="true" editor-type-id="JFormDesigner">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chess/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chess/util/ChessSave.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="53" column="36" lean-forward="false" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chess/GameWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3686">
+          <caret line="232" column="8" lean-forward="false" selection-start-line="232" selection-start-column="8" selection-end-line="232" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chess/GameStartWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding>
-            <element signature="e#20692#20693#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <marker date="1484463596751" expanded="false" signature="1015:6164" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <marker date="1484463596751" expanded="false" signature="6176:6591" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
           </folding>
         </state>
       </provider>
@@ -1366,7 +1397,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1386,7 +1416,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>jl1.0.1</last-edited>
+          <last-edited>intellij_uiDesigner</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

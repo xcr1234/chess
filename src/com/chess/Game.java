@@ -14,8 +14,7 @@ public class Game {
         EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
-                StartForm form = new StartForm();
-                JFrame frame = form.getFrame();
+                JFrame frame = new GameStartWindow();
                 frame.setVisible(true);
             }
         });

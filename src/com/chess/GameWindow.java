@@ -230,6 +230,20 @@ public class GameWindow extends JFrame {
             }
         });
         menu.add(item4);
+        JMenuItem menu5 = new JMenuItem("获取源码...");
+
+        menu5.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    Runtime.getRuntime().exec("rundll32 url.dll,FileProtocolHandler https://github.com/xcr1234/chess");
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                }
+            }
+        });
+        menu.addSeparator();
+        menu.add(menu5);
 
         panel.setLayout(new BorderLayout());
         panel.addMouseMotionListener(new MouseDragListener(panel, this));
@@ -334,6 +348,7 @@ public class GameWindow extends JFrame {
         }
 
     }
+
 
     /**
      * 落子
