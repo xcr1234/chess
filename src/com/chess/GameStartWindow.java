@@ -116,8 +116,6 @@ public class GameStartWindow extends JFrame {
             btnOk.setText("\u5f00\u59cb");
             btnOk.addActionListener(e -> {
 			btn_gameStart(e);
-			btnOkActionPerformed(e);
-			btn_gameStart(e);
 		});
             panel.add(btnOk, new GridConstraints(4, 1, 1, 1,
                 GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL,
